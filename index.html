@@ -32,19 +32,66 @@
                 러닝플랜을 작성하며 그동안의 나 자신에 대해 알고 성찰할 수 있었고, ’관심사 맵’을 만들며<br>
                 내 관심사에 대해 알아보는 계기가 되었다. 알아본 관심사를 바탕으로 개인주제 프로젝트 주제를 선정했다.<br>
             </div>
-        </main>
-        <footer>
-            <div class="foo" type="button"><a href='https://www.instagram.com/04h.e/'><img src="judyimg/run3.png"></a>
-            </div>
-            <div class="fooboder"></div>
-            <div class="footertext">
-                <f1><strong>Email</strong><br>hyoeun@futureclass.net</f1>
-                <f2><strong>Team page</strong><br>https://ter127.github.io/pdf--web/ </f2>
-                <f3><strong>Phone</strong><br>010-3201-0260</f3>
-            </div>
+            <div class="my">My project</div>
 
-        </footer>
-    </body>
+            <div class="cont" style="margin: 0">
+                <div style="overflow: hidden;">
+                    <div class="container">
+                        <div class="inner">
+                            <img src="judyimg/1m1.jpeg">
+                        </div>
+                        <div class="inner">
+                            <img src="judyimg/1m2.jpeg">
+                        </div>
+                        <div class="inner">
+                            <img src="judyimg/1m3.jpeg">
+                        </div>
+                        <div class="inner">
+                            <img src="judyimg/1m4.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <div class="b1">
+                    <div class='btn1' type=“button’><img src="judyimg/left.png"></div>
+                    <div class='btn2' type=“button’><img src="judyimg/right.png"></div>
+                </div>
+            </div>
+</div>
+</main>
+<footer>
+    <div class="foo" type="button"><a href='https://www.instagram.com/04h.e/'><img src="judyimg/run3.png"></a>
+    </div>
+    <div class="fooboder"></div>
+    <div class="footertext">
+        <f1><strong>Email</strong><br><a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=VpCqJXKkFqvQSLvfjfrmlDMPKHVnTbshCBDCgPDflqfrmTbBGwWgMXbbwvDzjjgkqkffTJb">hyoeun@futureclass.net</a>
+        </f1>
+        <f2><strong>Team page</strong><br><a
+                href="https://ter127.github.io/pdf--web">https://ter127.github.io/pdf--web</a></f2>
+        <f3><strong>Phone</strong><br>010-3201-0260</f3>
+    </div>
+
+</footer>
+<script>
+    var posi = 0
+    var contain = document.querySelector('.container')
+    document.querySelector('.btn2').addEventListener('click', function () {
+        {
+            if (-4650 < posi)
+                posi = posi - 1550
+            contain.style.transform = "translate(" + posi + "px)"
+        }
+    });
+    document.querySelector('.btn1').addEventListener('click', function () {
+        {
+            if (0 > posi)
+                posi = posi + 1550
+            contain.style.transform = "translate(" + posi + "px)"
+        }
+    });
+
+</script>
+</body>
 </div>
 
 </html>
