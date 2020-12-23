@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* header */
+.title {
+    font-weight: bold;
+    font-size: 65px;
+    text-align: center;
+    margin: 70px;
+    font-family: 'Permanent Marker', cursive;
+  
+}
+.boder {
+    border: 1px solid black;
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+}
+.menu {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    margin-top: 13px;
+    margin-left: 43%;
+    font-family: 'Lato', sans-serif;
+}
+.m,.mm,.mmm,.run {
+   margin-right: 30px;
+}
+.main img{
+width: 70%;
+display: block;
+margin: 0px auto;
+ margin-top: 13px;
+}
+/* 1m */
+.line1 img {
+    width: 1000px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 150px;
+}
+.part {
+    width: 940px;
+    margin: 0px auto;
+    font-size: 55px;
+}
+.box1 {
+    margin-top: 80px;
+    background-color: rgb(255, 167, 95);
+    text-align: center;
+    padding: 70px;
+    font-size: 19px;
+}
+.box1 strong {
+    font-size: 25px;
+}
+/* footer */
+.foo img {
+   width: 10%;
+   display: block;
+   margin: 0px auto;
+}
+.fooboder {
+    border: 1px solid black;
+    width: 70%;
+    display: block;
+    margin: 0px auto;
+}
+.footertext {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.footertext f1,.f2,.f3 {
+    margin-right: 100px;
+}
+.footertext f1 {
+    margin-left: -30px;
+}
+.footertext f3 {
+    margin-left: 100px;
+}
+.footertext strong {
+    font-size: 20px;
+}
