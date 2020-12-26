@@ -138,8 +138,10 @@ margin: 0px auto;
 
 /* 3m */
 .m31 {
-
-}
+    width: 25%;
+    display: block;
+    margin: 0px auto;
+} 
 .m32 {
     text-align: right;
     margin-right: 5%;
