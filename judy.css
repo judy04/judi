@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 
 /* header */
 .header {
@@ -20,15 +24,15 @@
     margin: 0px auto;
 }
 .menu {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     display: flex;
     margin-top: 13px;
-    margin-left: 43%;
-    font-family: 'Lato', sans-serif;
+    margin-left: 45%;
+    font-family: 'Architects Daughter', cursive;
 }
-.m,.mm,.mmm,.run {
-   margin-right: 30px;
+.mb1,.mb2,.mb3,.mb4 {
+   margin-right: 35px;
 }
 .main img{
 width: 70%;
@@ -47,6 +51,7 @@ margin: 0px auto;
     width: 57%;
     margin: 0px auto;
     font-size: 55px;
+    font-family: 'Bangers', cursive;
 }
 /* 프로젝트 설명 */
 .project {
@@ -135,9 +140,38 @@ margin: 0px auto;
 .m2txt {
   margin: 5%;
 }
-
+/* 2m 개주프 */
+.container2 {
+    width: 400vw;
+}
+.inner {
+    width: 100vw;
+    float: right;
+}
+.inner img {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+.cont2 {
+    position: relative;
+}
+.btn3 {
+    position: absolute;
+    top: 40%;
+    left: 21%;
+}
+.btn4 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.b2 img{
+    width: 80px;
+ }
 /* 3m */
-.m31 {
+.fire img{
     width: 25%;
     display: block;
     margin: 0px auto;
@@ -148,12 +182,77 @@ margin: 0px auto;
     font-size: 40px ;
     margin-bottom: 20px;
 }
-
+.m33 img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+/* 3m 개주프 */
+.container3 {
+    width: 400vw;
+}
+.inner {
+    width: 100vw;
+    float: right;
+}
+.inner img {
+    width: 600px;
+    display: block;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+.cont3 {
+    position: relative;
+}
+.btn5 {
+    position: absolute;
+    top: 40%;
+    left: 21%;
+}
+.btn6 {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.b3 img{
+    width: 80px;
+ }
+/* 4m */
+.map {
+    position: relative;
+}
+.map img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.run2 img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+.maptxt {
+    position: absolute;
+	top: 18%;
+    left: 32%;
+}
+.maptxt2 {
+    position: absolute;
+	top: 69%;
+	left: 32%;
+}
+.mt1,.mt2{
+    font-size: 25px;
+    font-weight: 900;
+}
 /* footer */
 .foo img {
    width: 10%;
    display: block;
    margin: 0px auto;
+   margin-bottom: 10px;
 }
 .fooboder {
     border: 1px solid black;
@@ -166,18 +265,19 @@ margin: 0px auto;
     justify-content: center;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 50px;
-    font-size: 15px;
+    margin-bottom: 80px;
+    font-size: 17px;
+    font-family: 'Architects Daughter', cursive;
 }
 .footertext f1,.f2,.f3 {
-    margin-right: 100px;
+    margin-right:110px;
 }
 .footertext f1 {
-    margin-left: -30px;
+    margin-left: -40px;
 }
 .footertext f3 {
-    margin-left: 100px;
+    margin-left: 140px;
 }
 .footertext strong {
-    font-size: 20px;
+    font-size: 22px;
 }
