@@ -50,6 +50,9 @@ margin: 0px auto;
     font-size: 55px;
     font-family: 'Bangers', cursive;
 }
+.part span{
+color: rgb(253, 142, 51);
+}
 /* 프로젝트 설명 */
 .project {
     text-align: center;
@@ -68,8 +71,8 @@ margin: 0px auto;
     margin-top: 20px;
     background-color: rgb(255, 167, 95);
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: 120px;
     font-size: 19px;
     margin-bottom: 150px;
 }
@@ -169,12 +172,48 @@ margin: 0px auto;
 .b2 img{
     width: 80px;
  }
-/* 3m */
-.fire img{
-    width: 25%;
+/* fire 커지게*/
+.firecont {
+    position: relative;
+}
+.fire{
     display: block;
-    margin: 0px auto;
-} 
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+}
+.fire img {
+    margin-top: 260px;
+    margin-bottom: 100px;
+}
+.fire > img {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    transition: transform 1s;
+}
+.fire:hover > img {
+    transform: translate(-50%,-50%) scale(1.2);
+}
+/* 박스 프로젝트 텍스트 커지게*/
+.txtbig {
+    position: relative;
+}
+.txtbig > .probig {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    transition: transform 0.6s;
+}
+.txtbig:hover > .probig {
+    transform: translate(-50%,-50%) scale(1.1);
+}
+/* 3m */
 .m32 {
     text-align: right;
     margin-right: 5%;
@@ -267,6 +306,31 @@ margin: 0px auto;
     font-size: 35px;
     font-weight: 900;
     font-family: 'Architects Daughter', cursive;
+}
+/* 4m map 밑줄 */
+.penn {
+    display: inline-table;
+    position: relative;
+    overflow: hidden;
+}
+.penn span {
+    position: relative;
+    z-index: 2;
+}
+.penn::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 210, 88, 0.6);
+    transition: all .40s;
+    z-index: 1;
+}
+.pen:hover .penn::before {
+    left: 0;
 }
 /* footer */
 .foo img {
