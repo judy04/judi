@@ -31,12 +31,39 @@
 .mb1,.mb2,.mb3,.mb4 {
    margin-right: 35px;
 }
-.main img{
-width: 70%;
-display: block;
-margin: 0px auto;
- margin-top: 13px;
+/* 메인 이미지, 텍스트 애니메이션 */
+.ma {
+    width: 70%;
+    max-width: 70%;
+    margin: 0 auto;
 }
+.ma > a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    margin: 5px;
+}
+.main {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.ma > a .main {
+    position: relative;
+    overflow: hidden;
+}
+.ma > a .main .maintxt {
+    position: absolute;
+    bottom: 150%;
+    left: 30px;
+    z-index: 2;
+    font-size: 30px;
+    transition:all .35s;
+}
+.main img{
+width: 100%;
+}
+a:hover .maintxt {bottom:50%;}
 /* 섹션 구분선 */
 .line img {
     width: 60%;
@@ -89,42 +116,110 @@ color: rgb(253, 142, 51);
 }
 /* 1m개주프 */
 .container {
-    width: 400vw;
+    width: 2400px;
+    display: flex;
 }
 .inner {
-    width: 100vw;
-    float: right;
+    width: 600px;
 }
 .inner img {
-    width: 600px;
-    display: block;
-    margin: 0px auto;
-    border: 1px solid black;
+    width: 100%;
+    
 }
 .cont {
     position: relative;
 }
+.conta {
+    overflow: hidden;
+     width: 600px;
+      border: 1px solid black;
+      margin: 0 auto;
+}
 .btn1 {
     position: absolute;
     top: 40%;
-    left: 21%;
+    left: 27%;
 }
 .btn2 {
     position: absolute;
     top: 40%;
-    right: 20%;
+    right: 27%;
 }
 .b1 img{
     width: 80px;
  }
+/* 2m 개주프 */
+.container2 {
+    width: 3600px;
+    display: flex;
+}
+/* 3m 개주프 */
+.container3 {
+    width: 3000px;
+    display: flex;
+}
+/* 2m 개주프 버튼 */
+.btn3 {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+.btn4 {
+    position: absolute;
+    top: 40%;
+    right: 27%;
+}
+.b2 img{
+    width: 80px;
+ }
+ /* 3m 개주프 버튼 */
+.btn5 {
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+.btn6 {
+    position: absolute;
+    top: 40%;
+    right: 27%;
+}
+.b3 img{
+    width: 80px;
+ }
+ 
+ /* 2m 사최 사진 커지게*/
+.m21{
+    display: block;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+}
+.m21 img {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.m21 > img {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    transition: transform 0.5s;
+}
+.m21:hover > img {
+    transform: translate(-50%,-50%) scale(0.97);
+}
 /* 2m */
  .box2 {
+     position: relative;
      background-color: rgb(255, 207, 75);
      width: 60%;
      display: block;
      margin: 0px auto;
      margin-top: 80px;
      padding-top: 50px;
+     padding-bottom: 30px;
      margin-bottom: 150px;
  }
 
@@ -137,41 +232,18 @@ color: rgb(253, 142, 51);
 }
 .mm22 img {
  position: absolute;
- width: 20%;
+ top: 73%;
+ left: 53%;
+ width: 30%;
 }
 .m2txt {
-  margin: 5%;
-}
-/* 2m 개주프 */
-.container2 {
-    width: 400vw;
-}
-.inner {
-    width: 100vw;
-    float: right;
-}
-.inner img {
-    width: 600px;
     display: block;
-    margin: 0px auto;
-    border: 1px solid black;
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
 }
-.cont2 {
-    position: relative;
-}
-.btn3 {
-    position: absolute;
-    top: 40%;
-    left: 21%;
-}
-.btn4 {
-    position: absolute;
-    top: 40%;
-    right: 20%;
-}
-.b2 img{
-    width: 80px;
- }
 /* fire 커지게*/
 .firecont {
     position: relative;
@@ -230,6 +302,7 @@ color: rgb(253, 142, 51);
 .m33 {
     position: relative;
 }
+
 .m34 {
     position: absolute;
 	top: 25%;
@@ -245,37 +318,6 @@ color: rgb(253, 142, 51);
     left: 39%;
     font-size: 20px;
 }
-/* 3m 개주프 */
-.container3 {
-    width: 400vw;
-}
-.inner {
-    width: 100vw;
-    float: right;
-}
-.inner img {
-    width: 600px;
-    display: block;
-    margin: 0px auto;
-    border: 1px solid black;
-}
-.cont3 {
-    position: relative;
-}
-.btn5 {
-    position: absolute;
-    top: 40%;
-    left: 21%;
-}
-.btn6 {
-    position: absolute;
-    top: 40%;
-    right: 20%;
-}
-.b3 img{
-    width: 80px;
- }
-
 /* 4m */
 .map {
     position: relative;

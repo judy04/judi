@@ -13,19 +13,23 @@
         <div class="title"> My learning trip </div>
         <div class="boder"></div>
         <div class="menu">
-            <div class="mb1" type="button">1m</div>
-            <div class="mb2" type="button">2m</div>
-            <div class="mb3" type="button">3m</div>
-            <div class="mb4" type="button">Run</div>
+            <div class="mb1" type="button" onclick="window.scrollTo(0,1300)">1m</div>
+            <div class="mb2" type="button" onclick="window.scrollTo(0,2700)">2m</div>
+            <div class="mb3" type="button" onclick="window.scrollTo(0,5100)">3m</div>
+            <div class="mb4" type="button" onclick="window.scrollTo(0,8200)">Run</div>
         </div>
     </header>
     <main>
-        <div class="main">
-            <!-- <div class="maintxt">If you do not<br>
-                walk today,<br>
-                You will have to<br>
-                run tomorrow.</div> -->
-            <img src="judyimg/main.png">
+        <div class="ma">
+            <a href="">
+                <div class="main">
+                    <div class="maintxt">If you do not<br>
+                        walk today,<br>
+                        You will have to<br>
+                        run tomorrow.</div>
+                    <img src="judyimg/main.png">
+                </div>
+            </a>
         </div>
         <!-- 1m 시작 -->
         <div class="line"><img src="judyimg/1m.png"></div>
@@ -45,7 +49,7 @@
         <div class="my">My project</div>
 
         <div class="cont" style="margin: 0">
-            <div style="overflow: hidden;">
+            <div class="conta">
                 <div class="container">
                     <div class="inner">
                         <img src="judyimg/1m1.jpeg">
@@ -79,8 +83,8 @@
             <div class="my">Team project</div><br><br>
             <div class="projecttitle">페트병의 비접착식 라벨을 제거하지않아 재활용되기 어려운 문제를 해결하자</div>
             <div class="m21"><img src="judyimg/2m1.png"></div>
-            <div class="m2txt">학습을 통해 페트병 라벨의 종류, 소재, 재활용률 등을 새롭게 알게 되었고, 원인맵과 설문조사,인터뷰를<br>
-                진행하여 ‘라벨을 제거하기 힘들거나 귀찮다’라는 원인을 도출하였다.<br><br>
+            <div class="m2txt">학습을 통해 페트병 라벨의 종류, 소재, 재활용률 등을 새롭게 알게 되었고, 원인맵과 설문조사,인터뷰를
+                진행하여 ‘라벨을 제거하기 힘들거나 귀찮다’라는 원인을 도출하였다.
                 인터뷰를 위해 페트병 수거함을 만들어 빈 페트병을 모았는데, 직접 절취형 페트병 라벨을 제거해보니 제거하기 쉽지 않았다.<br><br>
 
                 도출한 원인을 바탕으로 절취형 라벨의 절취 구멍을 확대하고,<br>
@@ -89,13 +93,13 @@
 
                 추가로 라벨 뒷면에 결과를 넣는 1+1 이벤트 등으로 자연스럽게 <br> 라벨을 제거시키는 방안도 내어, 이를 도식화 시켜보았다. <br><br>
                 이러한 팀 프로젝트 과정들을 통해 문제를 객관적으로 바라보는<br> 관점과 팀워크 등이 성장하였다.
-                <div class="mm22"><img src="judyimg/2m2.png"></div>
             </div>
+            <div class="mm22"><img src="judyimg/2m2.png"></div>
         </div>
         <div class="my">My project</div>
 
-        <div class="cont2" style="margin: 0">
-            <div style="overflow: hidden;">
+        <div class="cont" style="margin: 0">
+            <div class="conta">
                 <div class="container2">
                     <div class="inner">
                         <img src="judyimg/2m3.jpeg">
@@ -156,8 +160,8 @@
         </div>
         <div class="my">My project</div>
 
-        <div class="cont3" style="margin: 0">
-            <div style="overflow: hidden;">
+        <div class="cont" style="margin: 0">
+            <div class="conta">
                 <div class="container3">
                     <div class="inner">
                         <img src="judyimg/3m1.jpeg">
@@ -189,9 +193,11 @@
             <br>
             ∙ 또, 캐릭터 설정이나 이름 등을 정할 때 창의력이 많이 발휘되어 나중에 캐릭터 디자인을 할 기회가 있을때도<br>이런 아이디어를 유효하게 활용할 수 있을 것 같다. <br>
         </div>
-        <div class="m33"><img src="judyimg/3m6.png">
-            <div class="m34">[ PDF Tropicalization ]</div>
-            <strong>주제공감 결과물로 한반도의 열대화를 주제로 한 잡지제작</strong>
+        <div class="hideme">
+            <div class="m33"><img src="judyimg/3m6.png">
+                <div class="m34">[ PDF Tropicalization ]</div>
+                <strong>주제공감 결과물로 한반도의 열대화를 주제로 한 잡지제작</strong>
+            </div>
         </div>
 
 
@@ -233,57 +239,59 @@
         // 1m 개주프 슬라이드
         var posi = 0
         var contain = document.querySelector('.container')
-        document.querySelector('.btn2').addEventListener('click', function () {
-            {
-                if (-4500 < posi)
-                    posi = posi - 1500
-                contain.style.transform = "translate(" + posi + "px)"
-            }
-        });
         document.querySelector('.btn1').addEventListener('click', function () {
             {
                 if (0 > posi)
-                    posi = posi + 1500
+                    posi = posi + 600
+                contain.style.transform = "translate(" + posi + "px)"
+            }
+        });
+        document.querySelector('.btn2').addEventListener('click', function () {
+            {
+                if (-1800 < posi)
+                    posi = posi - 600
                 contain.style.transform = "translate(" + posi + "px)"
             }
         });
 
-        // 2m 개주프 슬라이드
-        var posi = 0
-        var contain = document.querySelector('.container2')
-        document.querySelector('.btn4').addEventListener('click', function () {
-            {
-                if (-4500 < posi)
-                    posi = posi - 1500
-                contain.style.transform = "translate(" + posi + "px)"
-            }
-        });
+        //   2m 개주프 슬라이드
+
+        var contain2 = document.querySelector('.container2')
         document.querySelector('.btn3').addEventListener('click', function () {
             {
                 if (0 > posi)
-                    posi = posi + 1500
-                contain.style.transform = "translate(" + posi + "px)"
+                    posi = posi + 600
+                contain2.style.transform = "translate(" + posi + "px)"
+            }
+        });
+        document.querySelector('.btn4').addEventListener('click', function () {
+            {
+                if (-3000 < posi)
+                    posi = posi - 600
+                contain2.style.transform = "translate(" + posi + "px)"
             }
         });
 
-        // 3m 개주프 슬라이드
-        var posi = 0
-        var contain = document.querySelector('.container3')
-        document.querySelector('.btn6').addEventListener('click', function () {
-            {
-                if (-4500 < posi)
-                    posi = posi - 1500
-                contain.style.transform = "translate(" + posi + "px)"
-            }
-        });
+        //   3m 개주프 슬라이드
+
+        var contain3 = document.querySelector('.container3')
         document.querySelector('.btn5').addEventListener('click', function () {
             {
                 if (0 > posi)
-                    posi = posi + 1500
-                contain.style.transform = "translate(" + posi + "px)"
+                    posi = posi + 600
+                contain3.style.transform = "translate(" + posi + "px)"
             }
         });
+        document.querySelector('.btn6').addEventListener('click', function () {
+            if (-2400 < posi) {
+                posi = posi - 600
+                contain3.style.transform = "translate(" + posi + "px)"
+            }
+        });
+
+
     </script>
+
 </body>
 </div>
 
