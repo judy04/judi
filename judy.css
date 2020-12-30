@@ -3,16 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 /* header */
-.header {
+/* header {
     position: fixed;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+  } */
+
 .title {
     font-weight: bold;
     font-size: 65px;
     text-align: center;
     margin: 70px;
     font-family: 'Permanent Marker', cursive;
-  
+    color: rgb(255, 111, 15);
+    text-shadow: 5px 3px 0 rgb(0, 0, 0);
 }
 .boder {
     border: 1px solid black;
@@ -28,13 +33,24 @@
     margin-left: 45%;
     font-family: 'Architects Daughter', cursive;
 }
+.mb1:hover {
+    color: rgb(243, 124, 44);
+}
+.mb2:hover {
+    color: rgb(243, 124, 44);
+}
+.mb3:hover {
+    color: rgb(243, 124, 44);
+}
+.mb4:hover {
+    color: rgb(243, 124, 44);
+}
 .mb1,.mb2,.mb3,.mb4 {
    margin-right: 35px;
 }
 /* 메인 이미지, 텍스트 애니메이션 */
 .ma {
     width: 70%;
-    max-width: 70%;
     margin: 0 auto;
 }
 .ma > a {
@@ -43,11 +59,6 @@
     text-decoration: none;
     margin: 5px;
 }
-.main {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-}
 .ma > a .main {
     position: relative;
     overflow: hidden;
@@ -55,10 +66,20 @@
 .ma > a .main .maintxt {
     position: absolute;
     bottom: 150%;
-    left: 30px;
+    right: 25%;
     z-index: 2;
-    font-size: 30px;
-    transition:all .35s;
+    font-size: 40px;
+    font-weight: 900;
+    transition:all .90s;
+    color: #000;
+    background-color: rgb(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 150px;
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 50%;
+}
+.ma > a:hover .main .maintxt {
+    bottom:25%
 }
 .main img{
 width: 100%;
@@ -116,11 +137,12 @@ color: rgb(253, 142, 51);
 }
 /* 1m개주프 */
 .container {
-    width: 2400px;
+    width: 3200px;
     display: flex;
+    transition:all .60s;
 }
 .inner {
-    width: 600px;
+    width: 800px;
 }
 .inner img {
     width: 100%;
@@ -131,43 +153,46 @@ color: rgb(253, 142, 51);
 }
 .conta {
     overflow: hidden;
-     width: 600px;
-      border: 1px solid black;
+     width: 800px;
+      border: 1.5px solid rgb(196, 196, 196);
+      border-radius: 50px;
       margin: 0 auto;
 }
 .btn1 {
     position: absolute;
     top: 40%;
-    left: 27%;
+    left: 20%;
 }
 .btn2 {
     position: absolute;
     top: 40%;
-    right: 27%;
+    right: 20%;
 }
 .b1 img{
     width: 80px;
  }
 /* 2m 개주프 */
 .container2 {
-    width: 3600px;
+    width: 4800px;
     display: flex;
+    transition:all .60s;
 }
 /* 3m 개주프 */
 .container3 {
-    width: 3000px;
+    width: 4000px;
     display: flex;
+    transition:all .60s;
 }
 /* 2m 개주프 버튼 */
 .btn3 {
     position: absolute;
     top: 40%;
-    left: 27%;
+    left: 20%;
 }
 .btn4 {
     position: absolute;
     top: 40%;
-    right: 27%;
+    right: 20%;
 }
 .b2 img{
     width: 80px;
@@ -176,12 +201,12 @@ color: rgb(253, 142, 51);
 .btn5 {
     position: absolute;
     top: 40%;
-    left: 27%;
+    left: 20%;
 }
 .btn6 {
     position: absolute;
     top: 40%;
-    right: 27%;
+    right: 20%;
 }
 .b3 img{
     width: 80px;
@@ -323,7 +348,7 @@ color: rgb(253, 142, 51);
     position: relative;
 }
 .map img {
-    width: 60%;
+    width: 50%;
     display: block;
     margin: 0 auto;
     margin-bottom: 150px;
@@ -336,13 +361,13 @@ color: rgb(253, 142, 51);
 }
 .maptxt {
     position: absolute;
-	top: 18%;
-    left: 32%;
+	top: 17%;
+    left: 35%;
 }
 .maptxt2 {
     position: absolute;
-	top: 69%;
-	left: 32%;
+	top: 68%;
+	left: 35%;
 }
 .mt1,.mt2{
     font-size: 35px;
@@ -407,4 +432,7 @@ color: rgb(253, 142, 51);
 }
 .footertext strong {
     font-size: 22px;
+}
+.footertext a {
+    color: rgb(243, 124, 44);
 }
